@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Game List</string>
+    <string name="game_tittle">Tittle</string>
+    <string name="released_date">Released on %s</string>
+    <string name="null_text"> -</string>
+    <string name="toolbar_tittle">Games</string>
+    <string name="error_message">Ocorreu um erro.Tente novamente mais tarde</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeActivity"
+    android:background="#202020">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/galery_tittle"
+        style="@style/TittleToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivUpperImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/fire_keeper_login_option"
+        style="@style/HomeImageStyle"
+        app:layout_constraintBottom_toTopOf="@id/ivLowerImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/laFileLottieIcon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_speed="0.7"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivUpperImage"
+            app:layout_constraintEnd_toEndOf="@id/ivUpperImage"
+            app:layout_constraintStart_toStartOf="@id/ivUpperImage"
+            app:layout_constraintTop_toTopOf="@id/ivUpperImage"
+            app:lottie_rawRes="@raw/file" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/local_gallery_tittle"
+            style="@style/GalleryTypeTittle"
+            app:layout_constraintTop_toBottomOf="@id/laFileLottieIcon"
+            app:layout_constraintStart_toStartOf="@id/ivUpperImage"
+            app:layout_constraintEnd_toEndOf="@id/ivUpperImage"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLowerImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/storm_king_login_option"
+        style="@style/HomeImageStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUpperImage" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/laCloudLottieIcon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:lottie_rawRes="@raw/clound"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_speed="0.7"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintTop_toTopOf="@id/ivLowerImage"
+            app:layout_constraintBottom_toBottomOf="@id/ivLowerImage"
+            app:layout_constraintStart_toStartOf="@id/ivLowerImage"
+            app:layout_constraintEnd_toEndOf="@id/ivLowerImage"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/remote_gallery_tittle"
+            style="@style/GalleryTypeTittle"
+            app:layout_constraintEnd_toEndOf="@id/ivLowerImage"
+            app:layout_constraintStart_toStartOf="@id/ivLowerImage"
+            app:layout_constraintTop_toBottomOf="@id/laCloudLottieIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

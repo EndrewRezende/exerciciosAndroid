@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#217CA3"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back"
+        app:title="Cadastro"
+        app:titleMarginStart="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_register">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_register_data"
+                style="@style/register_text_layout"
+                android:text="@string/title_register_data"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNameInput"
+                style="@style/register_et_input"
+                android:autofillHints="@string/register_name_hint"
+                android:hint="@string/register_name_hint"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_register_data" />
+
+            <EditText
+                android:id="@+id/etAddressInput"
+                style="@style/register_et_input"
+                android:autofillHints="@string/register_address_hint"
+                android:hint="@string/register_address_hint"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNameInput" />
+
+            <EditText
+                android:id="@+id/etPhoneInput"
+                style="@style/register_et_input"
+                android:autofillHints="@string/register_cellphone_hint"
+                android:hint="@string/register_cellphone_hint"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etAddressInput" />
+
+            <EditText
+                android:id="@+id/etEmailInput"
+                style="@style/register_et_input"
+                android:autofillHints="@string/register_email_hint"
+                android:hint="@string/register_email_hint"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPhoneInput" />
+
+            <TextView
+                android:id="@+id/tvCourseTitle"
+                style="@style/register_text_layout"
+                android:text="@string/title_course_selection"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailInput" />
+
+            <TextView
+                android:id="@+id/tvSpinnerTitle"
+                style="@style/register_sub_tittle"
+                android:text="@string/course_sub_title"
+                app:layout_constraintEnd_toEndOf="@+id/spinner"
+                app:layout_constraintStart_toStartOf="@+id/spinner"
+                app:layout_constraintTop_toBottomOf="@+id/tvCourseTitle" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@style/register_spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSpinnerTitle" />
+
+            <TextView
+                android:id="@+id/tvShiftTittle"
+                style="@style/register_sub_tittle"
+                android:text="@string/shift_selection"
+                app:layout_constraintEnd_toEndOf="@+id/spinner"
+                app:layout_constraintStart_toStartOf="@+id/spinner"
+                app:layout_constraintTop_toBottomOf="@id/spinner" />
+
+            <RadioGroup
+                android:id="@+id/rgButtonGroup"
+                style="@style/radio_group"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvShiftTittle">
+
+                <RadioButton
+                    android:id="@+id/rbMorning"
+                    style="@style/radio_button"
+                    android:text="@string/rb_morning"
+                    android:checked="false"/>
+
+                <RadioButton
+                    android:id="@+id/rbAfternoon"
+                    style="@style/radio_button"
+                    android:text="@string/rb_afternoon"
+                    android:checked="false"/>
+
+                <RadioButton
+                    android:id="@+id/rbNight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_night"
+                    android:checked="false"/>
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

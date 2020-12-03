@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svActivityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layout_constraintHorizontal_chainStyle="spread">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTittleMain"
+            android:text="@string/txt_tittle"
+            style="@style/textStyles"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/etFirstNumber"
+            style="@style/etHintStyles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_first_input"
+            android:autofillHints="@string/hint_first_input"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTittleMain" />
+
+        <EditText
+            android:id="@+id/etSecondNumber"
+            style="@style/etHintStyles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_second_input"
+            android:autofillHints="@string/hint_second_input"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etFirstNumber" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAdd"
+            android:text="@string/bt_addition"
+            style="@style/buttonStyle"
+            android:layout_width="@dimen/operation_button"
+            android:layout_height="@dimen/operation_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btSubtract"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSecondNumber" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btSubtract"
+            style="@style/buttonStyle"
+            android:text="@string/bt_subtraction"
+            android:layout_width="@dimen/operation_button"
+            android:layout_height="@dimen/operation_button"
+            app:layout_constraintBottom_toBottomOf="@id/btAdd"
+            app:layout_constraintEnd_toStartOf="@+id/btMultiply"
+            app:layout_constraintStart_toEndOf="@+id/btAdd"
+            app:layout_constraintTop_toTopOf="@id/btAdd" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btMultiply"
+            style="@style/buttonStyle"
+            android:text="@string/bt_multiplication"
+            android:layout_width="@dimen/operation_button"
+            android:layout_height="@dimen/operation_button"
+            app:layout_constraintBottom_toBottomOf="@id/btSubtract"
+            app:layout_constraintEnd_toStartOf="@+id/btDivide"
+            app:layout_constraintStart_toEndOf="@+id/btSubtract"
+            app:layout_constraintTop_toTopOf="@id/btSubtract"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btDivide"
+            style="@style/buttonStyle"
+            android:text="@string/bt_division"
+            android:layout_width="@dimen/operation_button"
+            android:layout_height="@dimen/operation_button"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btMultiply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btMultiply"
+            app:layout_constraintTop_toTopOf="@+id/btMultiply" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

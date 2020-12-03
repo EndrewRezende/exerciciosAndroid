@@ -1,0 +1,162 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#217CA3</item>
+        <item name="colorPrimaryDark">#005074</item>
+        <item name="colorAccent">#E29930</item>
+        <item name="titleTextColor">#fff</item>
+    </style>
+    <style name="name_text_style" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="course_text_style" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#808080</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+    
+    <style name="three_dots_menu" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="button_style" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:rotation">90</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="horizontal_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">#d3d3d3</item>
+    </style>
+
+    <!-- Recycler View Layout.xml-->
+
+    <style name="recycler_view">
+        <item name="android:paddingBottom">130dp</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="add_button_style" parent="Widget.AppCompat.Button">
+        <item name="layout_constraintVertical_bias">0.98</item>
+        <item name="layout_constraintHorizontal_bias">0.9</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="maxImageSize">30dp</item>
+        <item name="android:src">@drawable/ic_baseline_add_24</item>
+        <item name="rippleColor">#fff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Register Activity TextView and Input -->
+
+    <style name="register_text_layout" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#005074</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="register_et_input" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="singleLine">true</item>
+    </style>
+
+    <!-- Register Activity sub titles -->
+
+    <style name="register_sub_tittle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:color">#000</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <style name="register_spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:pointerIcon">arrow</item>
+    </style>
+
+    <!-- Radio group-->
+
+    <style name="radio_group" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="layout_constraintHorizontal_chainStyle">spread</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="radio_button" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">60dp</item>
+    </style>
+
+    <!-- Bottom Sheet Dialog -->
+    <style name="sheet_dialog_tittle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#606060</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="sheet_dialog_category_tittle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#606060</item>
+    </style>
+
+    <style name="text_sheet_dialog" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textColor">#217CA3</item>
+    </style>
+</resources>

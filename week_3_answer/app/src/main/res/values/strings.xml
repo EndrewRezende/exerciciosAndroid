@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week 3</string>
+    <string name="points">%d pontos</string>
+    <string name="ranking">Ranking</string>
+    <string name="qualified">%s está classificado(a)</string>
+    <string name="disqualified">%s está desclassificado(a)</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <TextView
+            android:id="@+id/tv_student_name"
+            style="@style/name_text_style"
+            android:text="@string/student_name"
+            app:layout_constraintEnd_toStartOf="@+id/tv_option_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            style="@style/course_text_style"
+            android:text="@string/course_name"
+            app:layout_constraintEnd_toStartOf="@+id/tv_option_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_student_name" />
+
+        <TextView
+            android:id="@+id/tv_option_menu"
+            style="@style/three_dots_menu"
+            android:layout_width="@dimen/three_dots_menu"
+            android:layout_height="@dimen/three_dots_menu_height"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/three_points"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_course_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_student_name" />
+
+        <View
+            android:id="@+id/horizontal_line"
+            style="@style/horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_option_menu"
+            app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_course_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

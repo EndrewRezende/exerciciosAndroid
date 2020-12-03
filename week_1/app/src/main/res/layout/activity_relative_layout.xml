@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/relativeTittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primeiro Exercício"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/relativeNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:hint="Nome"
+                android:layout_below="@id/relativeTittle"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/relativeAgeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:hint="Idade"
+                android:layout_below="@id/relativeNameInput" />
+
+            <Button
+                android:id="@+id/relativeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="FINALIZAR"
+                android:textColor="#FFF"
+                android:background="#007FDD"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/relativeAgeInput"/>
+
+        </RelativeLayout>
+</ScrollView>

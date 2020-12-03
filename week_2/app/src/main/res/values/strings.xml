@@ -1,0 +1,17 @@
+<resources>
+    <string name="txt_tittle">Calculadora simples</string>
+    <string name="hint_first_input">1º valor</string>
+    <string name="hint_second_input">2º valor</string>
+    <string name="bt_addition">+</string>
+    <string name="bt_subtraction">-</string>
+    <string name="bt_multiplication">x</string>
+    <string name="bt_division">/</string>
+    <string name="bt_re_calculate">CALCULAR NOVAMENTE</string>
+    <string name="txt_result_tittle">O resultado é:</string>
+    <string name="txt_input_verification">Obrigatório</string>
+    <string name="invalid">Inválido</string>
+    <string name="add_operation_code">add</string>
+    <string name="subtract_operation_code">sub</string>
+    <string name="multiply_operation_code">multiply</string>
+    <string name="divide_operation_code">divide</string>
+</resources>

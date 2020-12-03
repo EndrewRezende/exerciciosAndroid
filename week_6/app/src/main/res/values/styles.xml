@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TittleToolbar">
+        <item name="titleTextColor">#FFF</item>
+    </style>
+
+    <style name="GalleryTypeTittle">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HomeImageStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+</resources>

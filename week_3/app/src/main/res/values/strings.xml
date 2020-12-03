@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">week_3</string>
+    <string name="name_example">Nome</string>
+    <string name="name_example1">Cristiano José Pereira Lima dos Santos</string>
+    <string name="points">%d Pontos</string>
+    <string name="classified">%s classificado(a)</string>
+    <string name="declassified">%s desclassificado(a)</string>
+</resources>

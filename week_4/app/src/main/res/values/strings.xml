@@ -1,0 +1,33 @@
+<resources>
+    <!-- toolbar Title -->
+    <string name="app_name">Lista de Alunos</string>
+    <string name="register_title">Cadastro</string>
+
+    <!-- Main Activity -->
+    <string name="student_name">Nome Completo</string>
+    <string name="course_name">Curso selecionado</string>
+    <string name="three_points">&#8942;</string>
+
+    <!-- Register Activity -->
+    <string name="title_register_data">Dados pessoais</string>
+    <string name="title_course_selection">Curso</string>
+    <string name="register_name_hint">Nome</string>
+    <string name="register_address_hint">Endereço</string>
+    <string name="register_cellphone_hint">Telefone</string>
+    <string name="register_email_hint">Email</string>
+
+    <!-- Register Activity sub Titles -->
+    <string name="course_sub_title">Nome</string>
+    <string name="shift_selection">Turno</string>
+
+    <!-- Radio Button -->
+    <string name="rb_morning">Manhã</string>
+    <string name="rb_afternoon">Tarde</string>
+    <string name="rb_night">Noite</string>
+    <string name="sheet_name_tittle">Nome :</string>
+    <string name="sheet_address_tittle">Endereço :</string>
+    <string name="sheet_phone_tittle">Telefone :</string>
+    <string name="sheet_email_tittle">Email :</string>
+    <string name="sheet_course_tittle">Curso :</string>
+    <string name="sheet_shift_tittle">Turno :</string>
+</resources>

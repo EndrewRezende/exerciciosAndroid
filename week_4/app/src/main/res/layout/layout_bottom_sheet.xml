@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/tvSheetName"
+            style="@style/sheet_dialog_tittle"
+            android:text="@string/sheet_name_tittle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSheetAddressTittle"
+            style="@style/sheet_dialog_category_tittle"
+            android:text="@string/sheet_address_tittle"
+            app:layout_constraintEnd_toStartOf="@id/tvSheetAddressDisplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSheetName" />
+
+            <TextView
+                android:id="@+id/tvSheetAddressDisplay"
+                style="@style/text_sheet_dialog"
+                app:layout_constraintBottom_toBottomOf="@id/tvSheetAddressTittle"
+                app:layout_constraintStart_toEndOf="@id/tvSheetAddressTittle"
+                app:layout_constraintEnd_toEndOf="@id/tvSheetName"
+                app:layout_constraintTop_toTopOf="@id/tvSheetAddressTittle"/>
+
+        <TextView
+            android:id="@+id/tvSheetPhoneTittle"
+            style="@style/sheet_dialog_category_tittle"
+            android:text="@string/sheet_phone_tittle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSheetAddressTittle" />
+
+            <TextView
+                android:id="@+id/tvSheetPhoneDisplay"
+                style="@style/text_sheet_dialog"
+                app:layout_constraintStart_toEndOf="@id/tvSheetPhoneTittle"
+                app:layout_constraintBottom_toBottomOf="@id/tvSheetPhoneTittle"
+                app:layout_constraintEnd_toEndOf="@id/tvSheetAddressDisplay"
+                app:layout_constraintTop_toTopOf="@id/tvSheetPhoneTittle"/>
+
+        <TextView
+            android:id="@+id/tvSheetEmailTittle"
+            style="@style/sheet_dialog_category_tittle"
+            android:text="@string/sheet_email_tittle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSheetPhoneTittle" />
+
+            <TextView
+                android:id="@+id/tvSheetEmailDisplay"
+                style="@style/text_sheet_dialog"
+                app:layout_constraintStart_toEndOf="@id/tvSheetEmailTittle"
+                app:layout_constraintEnd_toEndOf="@id/tvSheetPhoneDisplay"
+                app:layout_constraintBottom_toBottomOf="@id/tvSheetEmailTittle"
+                app:layout_constraintTop_toTopOf="@id/tvSheetEmailTittle"/>
+
+        <TextView
+            android:id="@+id/tvSheetCourseTittle"
+            style="@style/sheet_dialog_category_tittle"
+            android:text="@string/sheet_course_tittle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSheetEmailTittle" />
+
+            <TextView
+                android:id="@+id/tvSheetCourseDisplay"
+                style="@style/text_sheet_dialog"
+                app:layout_constraintStart_toEndOf="@id/tvSheetCourseTittle"
+                app:layout_constraintEnd_toEndOf="@id/tvSheetEmailDisplay"
+                app:layout_constraintBottom_toBottomOf="@id/tvSheetCourseTittle"
+                app:layout_constraintTop_toTopOf="@id/tvSheetCourseTittle"/>
+
+        <TextView
+            android:id="@+id/tvSheetShiftTittle"
+            style="@style/sheet_dialog_category_tittle"
+            android:text="@string/sheet_shift_tittle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSheetCourseTittle" />
+
+            <TextView
+                android:id="@+id/tvSheetShiftDisplay"
+                style="@style/text_sheet_dialog"
+                app:layout_constraintStart_toEndOf="@id/tvSheetShiftTittle"
+                app:layout_constraintEnd_toEndOf="@id/tvSheetCourseDisplay"
+                app:layout_constraintBottom_toBottomOf="@id/tvSheetShiftTittle"
+                app:layout_constraintTop_toTopOf="@id/tvSheetShiftTittle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
