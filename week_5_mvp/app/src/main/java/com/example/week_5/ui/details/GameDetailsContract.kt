@@ -8,6 +8,9 @@ interface GameDetailsContract {
         fun showGameDetails(game: Game)
         fun toastFailure()
         fun toolbarButtons()
+//        fun showReleaseNull()
+//        fun showRelease(game: Game)
+//        fun gameReleaseDate(game: Game)
     }
 
     interface Presenter{

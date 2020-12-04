@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/defalt_style">
         <activity android:name=".ui.details.GameDetailsActivity"></activity>
-        <activity android:name=".ui.gameList.MainActivity">
+        <activity android:name=".ui.gameList.GameListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

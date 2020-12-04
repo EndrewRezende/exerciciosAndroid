@@ -62,10 +62,24 @@ class GameDetailsActivity : AppCompatActivity(), GameDetailsContract.View {
         } else {
             game.released
         }
-        tvReleasedOn.text = getString(R.string.released_date, gameDate)
+
         nestedScrollView.visibility = View.VISIBLE
         loadingBar.visibility = View.GONE
     }
+
+//    override fun gameReleaseDate(game: Game){
+//        val gameReleased = game.released
+//    }
+//
+//    override fun showReleaseNull() {
+//        val gameDate = getString(R.string.null_text)
+//        tvReleasedOn.text = getString(R.string.released_date, gameDate)
+//    }
+//
+//    override fun showRelease(game: Game){
+//        val released = game.released
+//        tvReleasedOn.text = getString(R.string.released_date, released)
+//    }
 
     override fun toolbarButtons() {
         setSupportActionBar(tbGameDetailTittle)
